@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
+  "name": "ib2003-bundick-inundation-level",
+  "profile": "tabular-data-resource",
+  "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Bundick Inundation Level",
+  "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Bundick Inundation Level",
+  "path": "https://virginia.app.box.com/file/1512613314571",
+  "schema": {
+    "fields": [
+      {
+        "name": "PatchID",
+        "title": "Patch ID",
+        "description": "Patch ID describing the location",
+        "type": "integer"
+      },
+      {
+        "name": "NAVD88ELEV",
+        "title": "North American Vertical Datum of 1988 (NAVD 88)",
+        "description": "The North American Vertical Datum of 1988 (NAVD 88) is the vertical control datum established in 1991 by the minimum-constraint adjustment of the Canadian-Mexican-United States leveling observations.",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "time-point",
+        "title": "Time",
+        "type": "datetime"
+      },
+      {
+        "name": "inundation-level",
+        "title": "Inundation Level",
+        "type": "number",
+        "unit": "m"
+      }
+    ],
+    "primaryKey": [
+      "cell-id",
+      "time-point"
+    ]    
+  },
+  "timeSeriesFormat": "columnEntry",
+  "timeSeriesColumn": "time-point",
+  "timePoints": {
+    "initialTime": "2003-09-11T00:00:00.000+04:00",
+    "endTime": "2003-09-21T00:00:00.000+04:00",
+    "increment": "PT3600S"
+  } 
+}

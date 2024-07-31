@@ -1,0 +1,194 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
+  "name": "/model_adcirc_data_storeregion/bundick/events/bundick_isabel_2003_waterleveltimeseries",
+  "profile": "tabular-data-resource",
+  "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Bundick Inundation Level",
+  "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Bundick Inundation Level",
+  "path": "https://virginia.app.box.com/file/1603386558047",
+  "schema": {
+    "fields": [
+      {
+        "name": "PatchID",
+        "title": "Patch ID",
+        "description": "Patch ID describing the location",
+        "type": "integer"
+      },
+      {
+        "name": "NAVD88ELEV",
+        "title": "North American Vertical Datum of 1988 (NAVD 88)",
+        "description": "The North American Vertical Datum of 1988 (NAVD 88) is the vertical control datum established in 1991 by the minimum-constraint adjustment of the Canadian-Mexican-United States leveling observations.",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 00:00:00",
+        "title": "Inundation Level at 2003-09-11T00:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 01:00:00",
+        "title": "Inundation Level at 2003-09-11T01:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 02:00:00",
+        "title": "Inundation Level at 2003-09-11T02:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 03:00:00",
+        "title": "Inundation Level at 2003-09-11T03:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 04:00:00",
+        "title": "Inundation Level at 2003-09-11T04:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 05:00:00",
+        "title": "Inundation Level at 2003-09-11T05:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 05:00:00",
+        "title": "Inundation Level at 2003-09-11T05:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 06:00:00",
+        "title": "Inundation Level at 2003-09-11T06:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 07:00:00",
+        "title": "Inundation Level at 2003-09-11T07:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 08:00:00",
+        "title": "Inundation Level at 2003-09-11T08:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 09:00:00",
+        "title": "Inundation Level at 2003-09-11T09:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 10:00:00",
+        "title": "Inundation Level at 2003-09-11T10:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 11:00:00",
+        "title": "Inundation Level at 2003-09-11T11:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 12:00:00",
+        "title": "Inundation Level at 2003-09-11T12:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 13:00:00",
+        "title": "Inundation Level at 2003-09-11T13:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 14:00:00",
+        "title": "Inundation Level at 2003-09-11T14:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 15:00:00",
+        "title": "Inundation Level at 2003-09-11T15:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 15:00:00",
+        "title": "Inundation Level at 2003-09-11T15:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 16:00:00",
+        "title": "Inundation Level at 2003-09-11T16:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 17:00:00",
+        "title": "Inundation Level at 2003-09-11T17:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 18:00:00",
+        "title": "Inundation Level at 2003-09-11T18:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 19:00:00",
+        "title": "Inundation Level at 2003-09-11T19:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 20:00:00",
+        "title": "Inundation Level at 2003-09-11T20:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 21:00:00",
+        "title": "Inundation Level at 2003-09-11T21:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 22:00:00",
+        "title": "Inundation Level at 2003-09-11T22:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "11-Sep-2003 23:00:00",
+        "title": "Inundation Level at 2003-09-11T33:00:00+04:00",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "217 more field (column> descriptions",
+        "description": "Furthermore all column name must be converted to be valid JSON date-time format"
+      }
+    ],
+    "primaryKey": [
+      "PatchID"
+    ]    
+  },
+  "timeSeriesFormat": "columnName",
+  "timePoints": {
+    "initialTime": "2003-09-11T00:00:00.000+04:00",
+    "endTime": "2003-09-21T00:00:00.000+04:00",
+    "increment": "PT3600S"
+  } 
+}

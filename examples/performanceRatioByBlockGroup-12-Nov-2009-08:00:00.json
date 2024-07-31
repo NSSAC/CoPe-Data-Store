@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
+  "name": "performance-ratio-by-block-group-12-nov-2009-08-00-00",
+  "profile": "tabular-data-resource",
+  "title": "Performance Ratio by Block Group 12-Nov-2009-08:00:00",
+  "description": "Ratio of optimal evacuation time vs current evacuation time foreach block group",
+  "path": "https://virginia.app.box.com/file/1502803527643",
+  "schema": {
+    "fields": [
+      {
+        "name": "blockgroup_geoid",
+        "title": "Block Group",
+        "description": "GEOID of Block Group",
+        "type": "string",
+        "constraints": {"pattern": "[0-9]{12}"}
+      },
+      {
+        "name": "performance_ratio",
+        "title": "Impact on Evacuation Time",
+        "description": "Let H denote the set of households in a blockgroup.\nFor a particular household h in H, let:\n  r_h = ratio of optimal evacuation time in normal condition to optimal evacuation time when flooding impacts roads\n\nThen, performance_ratio of the blockgroup = min_{h in H} r_h",
+        "type": "number",
+        "constraints": {
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      {
+        "name": "geometry",
+        "title": "Shape of Block Group",
+        "description": "Geometry of the blockgroup boundary in EPSG 4326 crs.",
+        "type": "string"
+      }
+    ],
+    "primaryKey": [
+      "blockgroup_geoid"
+    ]
+  },
+  "timeSeriesFormat": "uniqueTimePoint",
+  "timePoints": ["2009-11-12T08:00:00-05:00"]
+}
