@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "timeValuesInColumnName": {
+      "$id": "#timeValuesInColumnName",
+      "title": "timeValuesInColumnName",
+      "$$target": [
+        "#/definitions/uniqueId",
+        "./typeRegistry.json#/definitions/uniqueId"
+      ],
+      "description": "The different time points are identified by column names.",
+      "type": "string",
+      "enum": ["timeValuesInColumnName"]
+    },
+    "timeValuesInColumnEntry": {
+      "$id": "#timeValuesInColumnName",
+      "title": "timeValuesInColumnName",
+      "$$target": [
+        "#/definitions/uniqueId",
+        "./typeRegistry.json#/definitions/uniqueId"
+      ],
+      "description": "The different time points are identified by column names.",
+      "type": "string",
+      "enum": ["timeValuesInColumnName"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://raw.githubusercontent.com/frictionlessdata/specs/master/schemas/dictionary.json#/definitions/tabularDataResource"
+    },
+    {
+      "oneOf": [
+        {
+          "type": "object",
+          "description": "Time is identified through the name of a column.",
+          "required": [
+            "timeSeriesFormat"
+          ],
+          "properties": {
+            "timeSeriesFormat": {
+              "type": "string",
+              "enum": [
+                "columnName",
+                "uniqueTimePoint"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "description": "Time is identified through an entry in a column.",
+          "required": [
+            "timeSeriesFormat",
+            "column"
+          ],
+          "properties": {
+            "timeSeriesFormat": {
+              "type": "string",
+              "enum": [
+                "columnEntry"
+              ]
+            },
+            "timeSeriesColumn": {
+              "description": "The column containing the time values.",
+              "type": "string"
+            }
+          }
+        }
+
+      ]
+    },
+    {
+      "type": "object",
+      "required": [
+        "timePoints"
+      ],
+      "properties": {
+        "timePoints": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            {
+              "type": "object",
+              "required": [
+                "initialTime",
+                "endTime",
+                "increment"
+              ],
+              "properties": {
+                "initialTime": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "endTime": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "increment": {
+                  "type": "string",
+                  "format": "duration"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
