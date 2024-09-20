@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
+  "name": "esva_IB2003_cbgflooding_timeseries_longform",
+  "profile": "tabular-data-resource",
+  "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
+  "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
+  "path": "https://virginia.box.com/s/gg12cbaojklgvs6n8pe4ceznhf8m1bgm",
+  "schema": {
+    "fields": [
+      {
+        "name": "time-point",
+        "title": "datetime",
+        "type": "datetime"
+      },
+      {
+        "name": "GEOID",
+        "title": "GEOID",
+        "description": "Census Block Group ID describing the location",
+        "type": "integer"
+      },
+      {
+        "name": "inundation-level-at-GEOID-location",
+        "title": "inundation_level_m",
+        "type": "number",
+        "unit": "m"
+      }
+    ],
+    "primaryKey": [
+      "time-point",
+      "GEOID"
+    ]    
+  },
+  "timeSeriesFormat": "columnEntry",
+  "timeSeriesColumn": "time-point",
+  "timePoints": {
+    "initialTime": "2003-09-07T01:00:00.000+04:00",
+    "endTime": "2003-09-22T00:00:00.000+04:00",
+    "increment": "PT3600S"
+  } 
+}

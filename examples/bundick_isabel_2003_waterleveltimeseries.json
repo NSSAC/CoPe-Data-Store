@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
   "name": "/model_adcirc_data_storeregion/bundick/events/bundick_isabel_2003_waterleveltimeseries",
   "profile": "tabular-data-resource",
-  "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Bundick Inundation Level",
-  "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Bundick Inundation Level",
+  "title": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003 Bundick Inundation Level",
+  "description": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003 Bundick Inundation Level",
   "path": "https://virginia.app.box.com/file/1603386558047",
   "schema": {
     "fields": [
