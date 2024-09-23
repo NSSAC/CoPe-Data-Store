@@ -5,6 +5,17 @@
   "title": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003 Bundick Inundation Level",
   "description": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003 Bundick Inundation Level",
   "path": "https://virginia.app.box.com/file/1603386558047",
+  "regionShapeSet":     {
+    "name": "...",
+    "path": "https://virginia.app.box.com/file/1234"
+  },
+  "regionShapeIdentifierColumn": "PatchID",
+  "referenceData": [
+    {
+      "name": "...",
+      "path": "https://virginia.app.box.com/file/1234"
+    }
+  ],
   "schema": {
     "fields": [
       {
@@ -190,5 +201,5 @@
     "initialTime": "2003-09-11T00:00:00.000+04:00",
     "endTime": "2003-09-21T00:00:00.000+04:00",
     "increment": "PT3600S"
-  } 
+  }
 }

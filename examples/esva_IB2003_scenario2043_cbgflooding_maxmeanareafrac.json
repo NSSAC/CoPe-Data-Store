@@ -1,40 +1,42 @@
 {
   "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
-  "name": "esva_IB2003_cbgflooding_timeseries_longform",
+  "name": "esva_ib2003_scenario2043_cbgflooding_maxmeanareafrac",
   "profile": "tabular-data-resource",
   "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
   "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
-  "path": "https://virginia.box.com/s/gg12cbaojklgvs6n8pe4ceznhf8m1bgm",
+  "path": "https://virginia.app.box.com/file/1603414069393",
   "schema": {
     "fields": [
-      {
-        "name": "datetime",
-        "title": "time-point",
-        "type": "datetime"
-      },
       {
         "name": "GEOID",
         "title": "GEOID",
         "description": "Census Block Group ID describing the location",
-        "type": "string"
+        "type": "integer"
       },
       {
-        "name": "inundation_level_m",
-        "title": "inundation-level-at-GEOID-location",
+        "name": "PeakSurge2043_m",
+        "title": "Peak Surge 2043 [m]",
         "type": "number",
         "unit": "m"
+      },
+      {
+        "name": "MeanSurge2043_m",
+        "title": "Mean Surge 2043 [m]",
+        "type": "number",
+        "unit": "m"
+      },
+      {
+        "name": "InundationAreaFraction",
+        "title": "Inundation Area Fraction",
+        "type": "number"
       }
     ],
     "primaryKey": [
-      "datetime",
       "GEOID"
     ]    
   },
-  "timeSeriesFormat": "columnEntry",
-  "timeSeriesColumn": "datetime",
-  "timePoints": {
-    "initialTime": "2003-09-07T01:00:00.000+00:00",
-    "endTime": "2003-09-22T00:00:00.000+00:00",
-    "increment": "PT3600S"
-  } 
+  "timeSeriesFormat": "uniqueTimePoint",
+  "timePoints": [
+    
+  ]
 }

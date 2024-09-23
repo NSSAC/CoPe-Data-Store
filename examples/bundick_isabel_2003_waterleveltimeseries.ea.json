@@ -2,7 +2,7 @@
   "access": "public",
   "event": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003",
   "descriptionTitle": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003 Bundick Inundation Level",
-  "description": "some character limited text",
+  "descriptionText": "some character limited text",
   "region": "Bundick, VA",
   "regionBoundingBox": [
     5.1,
@@ -10,8 +10,6 @@
     3.2,
     3.5
   ],
-  "regionShapeSet": "",
-  "regionShapeIdentifierColumn": "PatchID",
   "dataDescription": [
     [
       "bundick_isabel_2003_waterleveltimeseries.json"
