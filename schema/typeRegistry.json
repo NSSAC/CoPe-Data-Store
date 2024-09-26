@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "timeValuesInColumnName": {
+      "$id": "#timeValuesInColumnName",
+      "title": "timeValuesInColumnName",
+      "$$target": [
+        "#/definitions/timeValuesInColumnName",
+        "./typeRegistry.json#/definitions/timeValuesInColumnName"
+      ],
+      "description": "The different time points are identified by column names.",
+      "type": "string",
+      "enum": ["timeValuesInColumnName"]
+    },
+    "timeValuesInColumnEntry": {
+      "$id": "#timeValuesInColumnEntry",
+      "title": "timeValuesInColumnEntry",
+      "$$target": [
+        "#/definitions/timeValuesInColumnEntry",
+        "./typeRegistry.json#/definitions/timeValuesInColumnEntry"
+      ],
+      "description": "The different time points are identified by column names.",
+      "type": "string",
+      "enum": ["timeValuesInColumnEntry"]
+    },
+    "timePoints": {
+      "$id": "#timePoints",
+      "title": "timePoints",
+      "$$target": [
+        "#/definitions/timePoints",
+        "./typeRegistry.json#/definitions/timePoints"
+      ],
+      "type": "object",
+      "required": [
+        "timePoints"
+      ],
+      "properties": {
+        "timePoints": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            {
+              "type": "object",
+              "required": [
+                "initialTime",
+                "endTime",
+                "increment"
+              ],
+              "properties": {
+                "initialTime": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "endTime": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "increment": {
+                  "type": "string",
+                  "format": "duration"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+      "boxResource": {
+        "$id": "#boxResource",
+        "title": "boxResource",
+        "$$target": [
+          "#/definitions/boxResource",
+          "./typeRegistry.json#/definitions/boxResource"
+        ],
+        "type": "object",
+        "required": [
+          "name",
+          "path"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string",
+            "pattern": "https://virginia.app.box.com/(file|folder)/[0-9]+"
+          }
+        }
+      }
+    }
+}
