@@ -9,16 +9,16 @@
   "regionShapeSet": {
     "name": "esva_2020blkgrp_clipped.shp",
     "path": "https://virginia.app.box.com/file/1506328514301"
-    },
+  },
 
   "regionShapeIdentifierColumn": "GEOID",
 
-  "referenceData": [
-    {
-      "name": "ESVA_1mDEM_complete.tif - HSM: this may not be correct",
-      "path": "https://virginia.app.box.com/file/1519524966861"
-    }
-  ],
+  "referenceData": [
+    {
+      "name": "ESVA_1mDEM_complete.tif - HSM: this may not be correct",
+      "path": "https://virginia.app.box.com/file/1519524966861"
+    }
+  ],
 
   "schema": {
     "fields": [
