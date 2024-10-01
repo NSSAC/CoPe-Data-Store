@@ -5,6 +5,21 @@
   "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
   "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
   "path": "https://virginia.app.box.com/file/1603414069393",
+
+  "regionShapeSet": {
+    "name": "esva_2020blkgrp_clipped.shp",
+    "path": "https://virginia.app.box.com/file/1506328514301"
+    },
+
+  "regionShapeIdentifierColumn": "GEOID",
+
+  "referenceData": [
+    {
+      "name": "ESVA_1mDEM_complete.tif - HSM: this may not be correct",
+      "path": "https://virginia.app.box.com/file/1519524966861"
+    }
+  ],
+
   "schema": {
     "fields": [
       {
@@ -26,17 +41,17 @@
         "unit": "m"
       },
       {
-        "name": "InundationAreaFraction",
+        "name": "InundationAreaFraction2043",
         "title": "Inundation Area Fraction",
         "type": "number"
       }
     ],
     "primaryKey": [
       "GEOID"
-    ]    
+    ]
   },
   "timeSeriesFormat": "uniqueTimePoint",
   "timePoints": [
-    
+
   ]
 }
