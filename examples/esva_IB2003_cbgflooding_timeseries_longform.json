@@ -7,14 +7,16 @@
   "path": "https://virginia.box.com/s/gg12cbaojklgvs6n8pe4ceznhf8m1bgm",
 
   "regionShapeSet": {
-    "name": "...",
-    "path": "https://virginia.app.box.com/file/1234"
+    "name": "esva_2020blkgrp_clipped.shp",
+    "path": "https://virginia.app.box.com/file/1506328514301"
   },
-  "regionShapeIdentifierColumn": "PatchID",
+
+  "regionShapeIdentifierColumn": "GEOID",
+
   "referenceData": [
     {
-      "name": "...",
-      "path": "https://virginia.app.box.com/file/1234"
+      "name": "ESVA_1mDEM_complete.tif - HSM: this may not be correct",
+      "path": "https://virginia.app.box.com/file/1519524966861"
     }
   ],
 
