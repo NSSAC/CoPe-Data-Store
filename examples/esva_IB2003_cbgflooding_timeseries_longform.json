@@ -5,6 +5,19 @@
   "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
   "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
   "path": "https://virginia.box.com/s/gg12cbaojklgvs6n8pe4ceznhf8m1bgm",
+
+  "regionShapeSet": {
+    "name": "...",
+    "path": "https://virginia.app.box.com/file/1234"
+  },
+  "regionShapeIdentifierColumn": "PatchID",
+  "referenceData": [
+    {
+      "name": "...",
+      "path": "https://virginia.app.box.com/file/1234"
+    }
+  ],
+
   "schema": {
     "fields": [
       {
@@ -20,7 +33,7 @@
       },
       {
         "name": "inundation_level_m",
-        "title": "inundation-level-at-GEOID-location",
+        "title": "Inundation level at GEOID location",
         "type": "number",
         "unit": "m"
       }
@@ -28,7 +41,7 @@
     "primaryKey": [
       "datetime",
       "GEOID"
-    ]    
+    ]
   },
   "timeSeriesFormat": "columnEntry",
   "timeSeriesColumn": "datetime",
@@ -36,5 +49,5 @@
     "initialTime": "2003-09-07T01:00:00.000+00:00",
     "endTime": "2003-09-22T00:00:00.000+00:00",
     "increment": "PT3600S"
-  } 
+  }
 }
