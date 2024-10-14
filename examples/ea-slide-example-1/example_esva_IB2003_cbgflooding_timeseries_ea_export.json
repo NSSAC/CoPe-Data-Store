@@ -1,0 +1,35 @@
+{
+    "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/eaSchema.json",
+    "access": "public",
+    "event": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003",
+    "descriptionTitle": "2003 Hurricane Isabel 9/11/2003 - 9/21/2003 Inundation Levels",
+    "descriptionText": "Some longer form description of the event that is to be displayed in the Equity Atlas",
+    "region": "Eastern Shore, VA",
+    "regionBoundingBox": {
+	"latMin": 37.048534,
+	"lonMin": -76.066970,
+	"latMax": 38.041536,
+	"lonMax": -75.160597
+    },
+    "data": [
+	{ 
+	    "name": "example_esva_IB2003_cbgflooding_timeseries.json", 
+	    "path": "https://virginia.app.box.com/file/1672766039884",  
+	    "key" : "2003" 
+	}
+    ],
+    "dataKeyLabel": "Year",
+    "dataColumns": [
+	{
+	    "name": "inundation_level",
+	    "visualizationType": "choropleth",
+	    "bins": [
+		0.1, 0.3, 0.5, 0.75, 1.0
+	    ],
+	    "labels": [
+		"a smidge", "[0.1-0.3)", "[0.3-0.5)", "[0.5, 0.75)", "[0.75, 1)", ">1"
+	    ],
+	    "$description": "note: bins are [-infinity, value_1), [value_1, value_2), ..., [value_m, +infinity]"
+	}
+    ]
+}
