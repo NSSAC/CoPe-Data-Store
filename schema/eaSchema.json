@@ -1,6 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "required": [
+    "access",
+    "descriptionTitle",
+    "descriptionText",
+    "region",
+    "regionBoundingBox",
+    "dateGroups",
+    "data",
+    "dataKeyLabel",
+    "dataColumns"
+  ],
   "properties": {
     "access": {
       "enum": [
@@ -47,7 +58,8 @@
       "type": "array",
       "items": {
         "enum": [
-          "storm surge"
+          "storm surge",
+          "event"
         ]
       },
       "description": "We need to define these groups"
