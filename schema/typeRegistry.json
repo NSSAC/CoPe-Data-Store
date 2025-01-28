@@ -10,7 +10,9 @@
       ],
       "description": "The different time points are identified by column names.",
       "type": "string",
-      "enum": ["timeValuesInColumnName"]
+      "enum": [
+        "timeValuesInColumnName"
+      ]
     },
     "timeValuesInColumnEntry": {
       "$id": "#timeValuesInColumnEntry",
@@ -21,7 +23,9 @@
       ],
       "description": "The different time points are identified by column names.",
       "type": "string",
-      "enum": ["timeValuesInColumnEntry"]
+      "enum": [
+        "timeValuesInColumnEntry"
+      ]
     },
     "timePoints": {
       "$id": "#timePoints",
@@ -70,27 +74,47 @@
         }
       }
     },
-      "boxResource": {
-        "$id": "#boxResource",
-        "title": "boxResource",
-        "$$target": [
-          "#/definitions/boxResource",
-          "./typeRegistry.json#/definitions/boxResource"
-        ],
-        "type": "object",
-        "required": [
-          "name",
-          "path"
-        ],
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "path": {
-            "type": "string",
-            "pattern": "https://virginia.app.box.com/(file|folder)/[0-9]+"
-          }
+    "boxResource": {
+      "$id": "#boxResource",
+      "title": "boxResource",
+      "$$target": [
+        "#/definitions/boxResource",
+        "./typeRegistry.json#/definitions/boxResource"
+      ],
+      "type": "object",
+      "required": [
+        "name",
+        "path"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "https://virginia.app.box.com/(file|folder)/[0-9]+"
         }
       }
+    },
+    "extended_number": {
+      "oneOf": [
+        {
+          "type": "number"
+        },
+        {
+          "enum": [
+            "-Infinity",
+            "-Inf",
+            "-infinity",
+            "-inf",
+            "Infinity",
+            "Inf",
+            "infinity",
+            "inf",
+            "NaN"
+          ]
+        }
+      ]
     }
+  }
 }

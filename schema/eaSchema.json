@@ -1,4 +1,123 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object"
+  "type": "object",
+  "properties": {
+    "access": {
+      "enum": [
+        "public",
+        "restricted"
+      ]
+    },
+    "event": {
+      "type": "string"
+    },
+    "descriptionTitle": {
+      "type": "string"
+    },
+    "descriptionText": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "regionBoundingBox": {
+      "type": "object",
+      "required": [
+        "latMin",
+        "lonMin",
+        "latMax",
+        "lonMax"
+      ],
+      "properties": {
+        "latMin": {
+          "type": "number"
+        },
+        "lonMin": {
+          "type": "number"
+        },
+        "latmax": {
+          "type": "number"
+        },
+        "lonMax": {
+          "type": "number"
+        }
+      }
+    },
+    "dateGroups": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "storm surge"
+        ]
+      },
+      "description": "We need to define these groups"
+    },
+    "data": {
+      "allOf": [
+        {
+          "ref": "./typeRegistry.json#/definitions/boxResource"
+        },
+        {
+          "type": "object",
+          "required": [
+            "key"
+          ],
+          "properties": {
+            "key": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "dataKeyLabel": {
+      "type": "string"
+    },
+    "dataColumns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "visualizationType",
+          "bins",
+          "labels"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "visualizationType": {
+            "enum": [
+              "choropleth"
+            ]
+          },
+          "bins": {
+            "type": "array",
+            "items": {
+              "ref": "./typeRegistry.json#/definitions/extended_number"
+            },
+            "$description": "note: bins are [value_1, value_2), [value_2, value_3), ..., [value_m, value_m+1]"
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
