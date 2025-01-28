@@ -65,22 +65,25 @@
       "description": "We need to define these groups"
     },
     "data": {
-      "allOf": [
-        {
-          "ref": "./typeRegistry.json#/definitions/boxResource"
-        },
-        {
-          "type": "object",
-          "required": [
-            "key"
-          ],
-          "properties": {
-            "key": {
-              "type": "string"
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "ref": "./typeRegistry.json#/definitions/boxResource"
+          },
+          {
+            "type": "object",
+            "required": [
+              "key"
+            ],
+            "properties": {
+              "key": {
+                "type": "string"
+              }
             }
           }
-        }
-      ]
+        ]
+      }
     },
     "dataKeyLabel": {
       "type": "string"
