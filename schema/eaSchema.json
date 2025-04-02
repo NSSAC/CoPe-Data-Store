@@ -46,7 +46,7 @@
         "lonMin": {
           "type": "number"
         },
-        "latmax": {
+        "latMax": {
           "type": "number"
         },
         "lonMax": {
@@ -54,7 +54,7 @@
         }
       }
     },
-    "dateGroups": {
+    "dataGroups": {
       "type": "array",
       "items": {
         "enum": [
@@ -83,7 +83,8 @@
             }
           }
         ]
-      }
+      },
+      "maximum": 1
     },
     "dataKeyLabel": {
       "type": "string"
