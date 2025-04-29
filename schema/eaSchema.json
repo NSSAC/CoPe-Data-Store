@@ -54,15 +54,12 @@
         }
       }
     },
-    "dataGroups": {
+    "dataCategories": {
       "type": "array",
       "items": {
-        "enum": [
-          "storm surge",
-          "event"
-        ]
+        "type": "string"
       },
-      "description": "We need to define these groups"
+      "description": "We need to define these categories"
     },
     "data": {
       "type": "array",
