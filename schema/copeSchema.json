@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/frictionlessdata/specs/master/schemas/dictionary.json#/definitions/tabularDataResource"
+      "$ref": "https://raw.githubusercontent.com/frictionlessdata/datapackage/refs/heads/main/public/profiles/1.0/dataresource.json"
     },
     {
       "oneOf": [

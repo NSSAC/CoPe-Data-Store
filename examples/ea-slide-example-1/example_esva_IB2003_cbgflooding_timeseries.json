@@ -1,57 +1,51 @@
 {
-    "$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
-    "name": "example_esva_IB2003_cbgflooding_timeseries.csv",
-    "profile": "tabular-data-resource",
-    "title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
-    "description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
-    "path": "https://virginia.app.box.com/file/1672766878959",
-    
-    "regionShapeSet": {
-	"name": "esva_2020blkgrp_clipped.shp",
-	"path": "https://virginia.app.box.com/file/1506328514301"
-    },
-    
-    "regionShapeIdentifierColumn": "GEOID",
-    
-    "referenceData": [
-	{
-	    "name": "ESVA_1mDEM_complete.tif - HSM: this may not be correct",
-	    "path": "https://virginia.app.box.com/file/1519524966861"
-	}
-    ],
-
-    "schema": {
-	"fields": [
-	    {
-		"name": "datetime",
-		"title": "time-point",
-		"type": "datetime"
-	    },
-	    {
-		"name": "GEOID",
-		"title": "GEOID",
-		"description": "Census Block Group ID describing the location",
-		"type": "string"
-	    },
-	    {
-		"name": "inundation_level",
-		"title": "Inundation level at GEOID location",
-		"type": "number",
-		"unit": "m"
-	    }
+	"$schema": "https://raw.githubusercontent.com/NSSAC/CoPe-Data-Store/main/schema/copeSchema.json",
+	"name": "example_esva_IB2003_cbgflooding_timeseries.csv",
+	"profile": "tabular-data-resource",
+	"title": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
+	"description": "2003 Hurricane Isabel 9/6/2003 - 9/21/2003 Virginia Delmarva Inundation Time Series",
+	"path": "https://virginia.app.box.com/file/1672766878959",
+	"regionShapeSet": {
+		"name": "esva_2020blkgrp_clipped.shp",
+		"path": "https://virginia.app.box.com/file/1506328514301"
+	},
+	"regionShapeIdentifierColumn": "GEOID",
+	"referenceData": [
+		{
+			"name": "ESVA_1mDEM_complete.tif - HSM: this may not be correct",
+			"path": "https://virginia.app.box.com/file/1519524966861"
+		}
 	],
-	
-	"primaryKey": [
-	    "datetime",
-	    "GEOID"
-	]
-    },
-    
-    "timeSeriesFormat": "columnEntry",
-    "timeSeriesColumn": "datetime",
-    "timePoints": {
-	"initialTime": "2003-09-07T01:00:00.000+00:00",
-	"endTime": "2003-09-22T00:00:00.000+00:00",
-	"increment": "PT3600S"
-    }
+	"schema": {
+		"fields": [
+			{
+				"name": "datetime",
+				"title": "time-point",
+				"type": "datetime"
+			},
+			{
+				"name": "GEOID",
+				"title": "GEOID",
+				"description": "Census Block Group ID describing the location",
+				"type": "string"
+			},
+			{
+				"name": "inundation_level",
+				"title": "Inundation level at GEOID location",
+				"type": "number",
+				"unit": "m"
+			}
+		],
+		"primaryKey": [
+			"datetime",
+			"GEOID"
+		]
+	},
+	"timeSeriesFormat": "columnEntry",
+	"timeSeriesColumn": "datetime",
+	"timePoints": {
+		"initialTime": "2003-09-07T01:00:00.000+00:00",
+		"endTime": "2003-09-22T00:00:00.000+00:00",
+		"increment": "PT3600S"
+	}
 }
